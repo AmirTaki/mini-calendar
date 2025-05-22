@@ -4,3 +4,10 @@ const month = document.getElementById('month')
 const year = document.getElementById('year')
 
 
+const today = new Date();
+
+
+date.innerHTML = today.getDate()
+day.innerHTML = today.getDay()
+month.innerHTML = today.getMonth()
+year.innerHTML = today.getYear()
