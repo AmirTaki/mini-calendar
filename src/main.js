@@ -10,7 +10,7 @@ const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 
 const allMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-date.innerHTML = today.getDate()
-day.innerHTML = today.getDay()
-month.innerHTML = today.getMonth()
+date.innerHTML = (today.getDate < 10 ? "0" : "") + today.getDate()
+day.innerHTML = weekDays[today.getDay()]
+month.innerHTML = allMonths[today.getMonth()]
 year.innerHTML = today.getFullYear()
